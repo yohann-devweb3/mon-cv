@@ -1,0 +1,104 @@
+@media only screen and (max-width: 949px) {/*----------VERSION TABLETTE-------------------------------------------------------------*/
+
+
+}
+
+@media only screen and (min-width: 950px) {/*----------VERSION PC-------------------------------------------------------------*/
+
+    /*------------------------------------------HEADER--------------------------------------*/
+    #header{
+        background-color: brown;
+        height: 175px;
+    }
+
+    #NameJob{
+        border: 1px solid #76923C;
+        border-radius: 10px;
+        min-width: 50.9%;
+        max-width: 50%;
+        position: ABSOLUTE;
+        left: 45%;
+        TOP: 4%;
+        background-color: #76923C;
+    }
+
+    #header img{
+        height: 150px;
+        left: 10%;
+        POSITION: relative;
+    }
+    /*------------------------------------------BODY--------------------------------------*/
+    #leftPanel{
+        border: 1px solid black;
+        max-width: 400px;
+        min-height: 963px;
+        height: 1035px;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: black;
+    }
+    #rightPanel{
+        border: 1px solid black;
+        width: 55%;
+        height: 1035px;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: lightyellow;
+    }
+    
+    #rightPanel img{
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    #Contact{
+        max-width: 400px;
+    }
+
+    #Competence{
+        max-width: 400px;
+    }
+
+    #content{
+        min-height: 1050px;
+        background-color: white;
+        margin-right: 10px;
+        margin-left: 80px;
+    }
+
+    /*------------------------------------------FOOTER--------------------------------------*/
+    #footer{
+        background-color: black;
+        height: 50px;
+        bottom: 0px;
+        position: relative;
+    }
+
+    /*------------------------------------------ADDONS--------------------------------------*/
+
+    .image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .inline{
+        display: inline-block;
+    }
+
+    .left{
+        float: left!important;
+    }
+
+
+    .ovhd{
+        overflow: hidden!important;
+    }
+    .txtgreen{
+        color : #76923C;
+    }
+
+    .txtwhite {
+        color: white;
+    }
+ 
+}
