@@ -31,7 +31,7 @@
     }
     /*------------------------------------------BODY--------------------------------------*/
     body{
-        background-color: #ecc19c;
+        background-color: #e0e0e0;
     }
     #leftPanel{
         border: 1px solid black;
@@ -69,7 +69,7 @@
 
     #content{
         min-height: 1050px;
-        background-color: #ecc19c;
+        background-color: #e0e0e0;
         margin-right: 10px;
         margin-left: 80px;
     }
