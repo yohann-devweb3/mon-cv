@@ -7,19 +7,21 @@
 
     /*------------------------------------------HEADER--------------------------------------*/
     #header{
-        background-color: brown;
-        height: 175px;
+        
+        background-color: #34c4bcec;
+        height: 175px
     }
 
     #NameJob{
-        border: 1px solid #76923C;
-        border-radius: 10px;
         min-width: 33.9%;
+        padding: 7px;
         max-width: 35%;
         position: ABSOLUTE;
         left: 40%;
         TOP: 4%;
-        background-color: #76923C;
+        background-color: #1e847fdc;
+        border-radius: 4px;
+        box-shadow: 21px -16px teal;
     }
 
     #header img{
@@ -28,6 +30,9 @@
         POSITION: relative;
     }
     /*------------------------------------------BODY--------------------------------------*/
+    body{
+        background-color: #ecc19c;
+    }
     #leftPanel{
         border: 1px solid black;
         max-width: 400px;
@@ -36,14 +41,17 @@
         padding-right: 5px;
         padding-left: 5px;
         background-color: black;
+        border-radius: 5px;
+        box-shadow: 21px -16px rgba(0, 0, 0, 0.433);
     }
     #rightPanel{
-        border: 1px solid black;
+        
         width: 55%;
         height: 1035px;
         padding-right: 5px;
         padding-left: 5px;
         background-color: lightyellow;
+        box-shadow: 21px -16px rgba(255, 255, 224, 0.6);
     }
     
     #rightPanel img{
@@ -61,7 +69,7 @@
 
     #content{
         min-height: 1050px;
-        background-color: white;
+        background-color: #ecc19c;
         margin-right: 10px;
         margin-left: 80px;
     }
