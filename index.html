@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>    
 </head>
-<body>
+<body  onload="setProgressBars()">
     <nav></nav>
 <header id="header">
     <img src="./images/photo.png" alt="photo de profil"/>
@@ -16,7 +16,7 @@
     </section>
 
 </header>
-<section id="content">
+<section id="content" >
     <aside id="leftPanel" class="left">
         <section id="Contact">
             <h2 class="txtgreen">Contact</h2>
@@ -31,10 +31,17 @@
         <section id="Competence">
             <h2 class="txtgreen">Comp&eacutetence</h2>
                 <p class="inline txtwhite">HTML5 & CSS3</p><br>
+                <progress id="pb_HTML" value="80" max="100"> </progress><br>
                 <p class="inline txtwhite">JS & jQuery</p><br>
+                <progress id="pb_JS" value="55" max="100"> </progress><br>
                 <p class="inline txtwhite">Microsoft Office</a></p><br>
-                <p class="inline txtwhite">SQL</p>
-                <p class="inline txtwhite">PYTHON</p>
+                <progress id="pb_MICRO" value="68" max="100"> </progress><br>
+                <p class="inline txtwhite">SQL</p><br>
+                <progress id="pb_SQL" value="60" max="100"> </progress><br>
+                <p class="inline txtwhite">PYTHON</p> <br>
+                <progress id="pb_PYTHON" value="40" max="100">
+                </progress><br>
+      
         </section>
         <section id="Personnalite">
             <h2 class="txtgreen">Personnalit&eacute;</h2>
@@ -43,8 +50,8 @@
             <p class="inline txtwhite">Motivation</p><br>
         </section>
         
-        <li><a id="linkPortfolio" href="https://yohann-devweb3.github.io/mon-portfolio/" class="txtwhite ">Mon Portfolio</a></li>
-        
+        <li><a id="linkPortfolio" href="https://yohann-devweb3.github.io/mon-portfolio/" class="txtwhite ">Mon Portfolio
+        <img id="imgPortfolio" src="./images/portfolio.png" alt="mon portfolio"/></a></li>
     </aside>
     <!--------------------------------------------panneau de droite-------------------------------------------------->
     <section id="rightPanel" class="left">
@@ -81,7 +88,7 @@
                 <h4><li>DSI de la Province Nord (Koné) | 2014/11 – 2015/07 –</li></h4>
                     <h4>Analyste développeur – Chargé du projet de refonte d’un site  de gestion des Installations Classées pour la Protection de l’Environnement (ICPE) et des carrières :</li></h4> 
         </section>
-        <section id="interet">
+        <section id="interet" >
             <h2 class="txtgreen">Int&eacute;r&ecirc;t</h2>
             <p class="inline">E-learning de langages de programmation via YouTube 
                 ou des MOOC (NodeJS et Angular en ce moment), 
@@ -93,6 +100,9 @@
 <footer id="footer">
     
 </footer>
+<script type="text/javascript" src="./script.js">
+
+</script>
 </body>
 
 </html>
