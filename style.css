@@ -1,6 +1,115 @@
 @media only screen and (max-width: 949px) {/*----------VERSION TABLETTE-------------------------------------------------------------*/
+ /*------------------------------------------HEADER--------------------------------------*/
+ #header{
+    background-color: #34c4bcec;
+    height: 175px
+}
+
+#NameJob{
+    min-width: 33.9%;
+    padding: 7px;
+    max-width: 50%;
+    position: ABSOLUTE;
+    left: 40%;
+    TOP: 6%;
+    background-color: #1e847fdc;
+    border-radius: 4px;
+    FONT-SIZE: x-small;
+    box-shadow: 21px -16px teal;
+}
+
+#header img{
+    height: 120px;
+    left: 10%;
+    POSITION: relative;
+}
+/*------------------------------------------BODY--------------------------------------*/
+body{
+    background-color: #e0e0e0;
+
+}
+#leftPanel{
+    border: 1px solid black;
+    max-width: 139px;
+    min-height: 1168px;
+    height: 1035px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: black;
+    box-shadow: 21px -16px rgb(0 0 0 / 43%);
+} 
+#rightPanel{
+
+    width: 55%;
+    height: 1170px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: lightyellow;
+    box-shadow: 21px -16px rgb(255 255 224 / 60%);
+
+}
+
+#rightPanel img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+#Contact{
+    max-width: 400px;
+}
+
+#Competence{
+    max-width: 400px;
+}
+
+#content{
+    min-height: 1171px;
+    background-color: #e0e0e0;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: smaller;
+
+}
 
 
+#linkPortfolio{
+    position: relative;
+    TOP: 391px;
+    RIGHT: 8px;
+}
+/*------------------------------------------FOOTER--------------------------------------*/
+#footer{
+    background-color: black;
+    height: 50px;
+    bottom: 0px;
+    position: relative;
+}
+  /*------------------------------------------ADDONS--------------------------------------*/
+    
+    .image{
+        width: 30px;
+        height: 30px;
+    }
+
+    .inline{
+        display: inline-block;
+    }
+
+    .left{
+        float: left!important;
+    }
+
+
+    .ovhd{
+        overflow: hidden!important;
+    }
+    .txtgreen{
+        color : #76923C;
+    }
+
+    .txtwhite {
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 950px) {/*----------VERSION PC-------------------------------------------------------------*/
@@ -21,7 +130,7 @@
         TOP: 4%;
         background-color: #1e847fdc;
         border-radius: 4px;
-        box-shadow: 21px -16px teal;
+        box-shadow: 19px -9px teal;
     }
 
     #header img{
