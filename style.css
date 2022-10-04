@@ -6,21 +6,26 @@
 }
 
 #NameJob{
-    min-width: 33.9%;
-    padding: 7px;
-    max-width: 50%;
+    min-width: 35.9%;
+    padding: 6px;
+    max-width: 52%;
     position: ABSOLUTE;
-    left: 40%;
-    TOP: 6%;
+    left: 42%;
+    TOP: 9.2%;
     background-color: #1e847fdc;
     border-radius: 4px;
-    FONT-SIZE: x-small;
+    FONT-SIZE: 45PX;
     box-shadow: 21px -16px teal;
+    color: white;
+}
+
+#NameJob h4{
+    font-size: 1.8rem;
 }
 
 #header img{
-    height: 120px;
-    left: 10%;
+    height: 150px;
+    left: 5.4%;
     POSITION: relative;
 }
 /*------------------------------------------BODY--------------------------------------*/
@@ -28,10 +33,14 @@ body{
     background-color: #e0e0e0;
 
 }
+
+h4{
+    font-size: 1.2rem!important;
+}
 #leftPanel{
     border: 1px solid black;
-    max-width: 139px;
-    min-height: 1168px;
+    max-width: 45%;
+    min-height: 1550px;
     height: 1035px;
     padding-right: 5px;
     padding-left: 5px;
@@ -41,7 +50,7 @@ body{
 #rightPanel{
 
     width: 55%;
-    height: 1170px;
+    height: 1550px;
     padding-right: 9px;
     padding-left: 9px;
     background-color: lightyellow;
@@ -52,6 +61,8 @@ body{
 #rightPanel img{
     max-width: 20px;
     max-height: 20px;
+    position: relative;
+    top: 3px;
 }
 
 #Contact{
@@ -63,7 +74,7 @@ body{
 }
 
 #content{
-    min-height: 1171px;
+    min-height: 1590px;
     background-color: #e0e0e0;
     margin-right: 0px;
     margin-left: 0px;
@@ -122,6 +133,10 @@ body{
     .txtwhite {
         color: white;
     }
+    .plus4pxt{
+        position: relative;
+        top: 4px!important;
+    }
 }
 
 @media only screen and (min-width: 950px) {/*----------VERSION PC-------------------------------------------------------------*/
@@ -139,25 +154,31 @@ body{
         max-width: 35%;
         position: ABSOLUTE;
         left: 35%;
-        TOP: 2.3%;
+        TOP: 8.4%;
         background-color: #1e847fdc;
         border-radius: 4px;
         box-shadow: 19px -9px teal;
+        color: white;
     }
 
     #header img{
         height: 150px;
-        left: 10%;
+        left: 20.4%;
         POSITION: relative;
     }
     /*------------------------------------------BODY--------------------------------------*/
     body{
         background-color: #e0e0e0;
     }
+
+    H4{
+        font-size: 1.5rem!important;
+    }
+
     #leftPanel{
         border: 1px solid black;
         max-width: 400px;
-        min-height: 963px;
+        min-height: 1343px;
         height: 1035px;
         padding-right: 5px;
         padding-left: 15px;
@@ -168,7 +189,7 @@ body{
     #rightPanel{
         
         width: 55%;
-        height: 1035px;
+        height: 1343px;
         padding-right: 9px;
         padding-left: 9px;
         background-color: lightyellow;
@@ -178,6 +199,8 @@ body{
     #rightPanel img{
         max-width: 20px;
         max-height: 20px;
+        position: relative;
+        top: 3px;
     }
 
     #Contact{
@@ -189,7 +212,7 @@ body{
     }
 
     #content{
-        min-height: 1050px;
+        min-height: 1350px;
         background-color: #e0e0e0;
         margin-right: 10px;
         margin-left: 80px;
@@ -221,6 +244,19 @@ body{
     .borderbot{
         border-bottom : 1px solid brown;
     }
+
+    #imgMinPortfolio{
+        display: block;
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        HEIGHT: 170PX;
+    }
+  
     /*------------------------------------------FOOTER--------------------------------------*/
     #footer{
         background-color: black;
@@ -230,7 +266,9 @@ body{
     }
 
     /*------------------------------------------ADDONS--------------------------------------*/
-    
+    .w30{
+        width: 30%!important;
+    }
     .image{
         width: 30px;
         height: 30px;
@@ -255,5 +293,14 @@ body{
     .txtwhite {
         color: white;
     }
- 
+    
+    .plus4pxt{
+        position: relative;
+        top: 4px!important;
+    }
+
+    .plus50pxt{
+     
+        top: 50px!important; 
+    }
 }

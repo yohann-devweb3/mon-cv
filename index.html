@@ -4,32 +4,38 @@
 <head>
     <title>Cv Alternant Yohann HUEDRO</title>
     <link rel="stylesheet" href="./style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css"  media="screen,projection"/>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"/>    
+
 </head>
 <body  onload="setProgressBars()">
     <nav></nav>
 <header id="header">
-    <img src="./images/photo.png" alt="photo de profil"/>
+    <img src="./images/photo.png" alt="photo de profil" id="photoProfil" />
     <section id="NameJob" >
-        <h1>Yohann HUEDRO</h1>
-        <h2>Alternant d&eacute;veloppeur web et web mobile</h2>
+        <h4>Yohann HUEDRO</h4>
+        <h4>Alternant d&eacute;veloppeur web et web mobile</h4>
     </section>
 
 </header>
+<section class="container">
 <section id="content" >
     <aside id="leftPanel" class="left">
         <section id="Contact">
-            <h2 class="txtgreen">Contact</h2>
-            <img  class="image inline " src="./images/geolocal.png" alt="adresse" >  <p class="inline txtwhite"> rue Emma Meyer - Magenta</p><br>
-            <img  class="image inline" src="./images/tel.png" alt="adresse" >  <p class="inline txtwhite">(+687) 94.25.26</p><br>
-            <img  class="image inline " src="./images/mail.png" alt="adresse" >  <p class="inline txtwhite"><a href="mailto:yohann.huedro@gmail.com" class="txtwhite"> yohann.huedro@gmail.com</a></p><br>
-            <img  class="image inline" src="./images/age.png" alt="adresse" >  <p class="inline txtwhite"> 30 ans</p>
+            <h4 class="txtgreen">Contact</h4>
+            <p class="inline txtwhite"><a href="https://www.google.fr/maps/place/Magenta,+Noum%C3%A9a+98800,+Nouvelle-Cal%C3%A9donie/@-22.2736239,166.4592057,15z/data=!3m1!4b1!4m5!3m4!1s0x6c2808307131508b:0x75e2c852c3dd8827!8m2!3d-22.2716466!4d166.4649847" class="txtwhite btn-floating pulse"><i class="material-icons">location_on</i></a> 1 rue Emma MEYER</a></p><br>
+            <p class="inline txtwhite"><a href="tel:+687942526" class="txtwhite btn-floating pulse"><i class="material-icons">local_phone</i></a> (+687) 94.25.26</a></p><br>
+            <p class="inline txtwhite"><a href="mailto:yohann.huedro@gmail.com" class="txtwhite btn-floating pulse"><i class="material-icons">contact_mail</i></a> yohann.huedro@gmail.com</a></p><br>
+            <p class="inline txtwhite"><a href="https://www.linkedin.com/in/yohann-huedro-5364a124b/" class="txtwhite btn-floating pulse"><i class="material-icons">link</i></a> LinkedIn</a></p><br>
         
 
         </section>
 
         <section id="Competence">
-            <h2 class="txtgreen">Comp&eacutetence</h2>
+            <h4 class="txtgreen">Comp&eacutetence</h4>
                 <p class="inline txtwhite">HTML5 & CSS3</p><br>
                 <progress id="pb_HTML" value="80" max="100"> </progress><br>
                 <p class="inline txtwhite">JS & jQuery</p><br>
@@ -44,19 +50,35 @@
       
         </section>
         <section id="Personnalite">
-            <h2 class="txtgreen">Personnalit&eacute;</h2>
+            <h4 class="txtgreen">Personnalit&eacute;</h4>
             <p class="inline txtwhite">Passion</p><br>
             <p class="inline txtwhite">Esprit d'&eacute;quipe</p><br>
             <p class="inline txtwhite">Motivation</p><br>
         </section>
-        
-        <li><a id="linkPortfolio" href="https://yohann-devweb3.github.io/mon-portfolio/" class="txtwhite ">Mon Portfolio
-        <img id="imgPortfolio" src="./images/portfolio.png" alt="mon portfolio"/></a></li>
+        <section>
+            <div class="card plus50pxt">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./images/portfolio-min.png" id="imgMinPortfolio" alt="mon portfolio">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Voir mon Portfolio <i class="material-icons plus4pxt">assignment_ind</i></span>
+                  <p><a href="https://yohann-devweb3.github.io/mon-portfolio/">Cliquez ici</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Lien vers le Portfolio<i class="material-icons right">close</i></span>
+                  <p>En cliquant sur le lien bleu ci-dessous vous atteindrez mon Portfolio et vous acc&eacute;derez &agrave; certains de mes projets.</p>
+                </div>
+              </div>
+        </section>        
+
+
+
+
     </aside>
     <!--------------------------------------------panneau de droite-------------------------------------------------->
     <section id="rightPanel" class="left">
         <section  id="Formation">
-            <h2 class="txtgreen borderbot">Formation</h2>
+            <h4 class="txtgreen borderbot "><i class="material-icons plus4pxt">class</i>Formation</h4>
             <img  class="image inline" src="./images/circpurple.png" alt="capagri" >  <p class="inline">CAP Agricole | 2020-2021</p><br>
                 <p>Spécialité «Métiers de l’agriculture» en alternance - Chambre d’Agriculture et de la P&ecirc;che de Nouvelle-Cal&eacute;donie (Nouméa)
                 </p>
@@ -72,34 +94,46 @@
         </section>
 
         <section id="ExpProfessionelle" >
-            <h2 class="txtgreen borderbot">Exp&eacute;rience Professionnelle</h2>
-                <h4><li>P&eacute;pini&egrave;re Esprit Jardin (Nouméa) | 2020/07 – 2022/02 –</li></h4>
-                    <h4>Alternant ouvrier horticole</h4>
+            <h4 class="txtgreen borderbot"><i class="material-icons plus4pxt">assignment</i>Exp&eacute;rience Professionnelle</h4>
+                <p><li>P&eacute;pini&egrave;re Esprit Jardin (Nouméa) | 2020/07 – 2022/02 –</li></p>
+                    <p>Alternant ouvrier horticole</p>
     
-                <h4><li>Atout Vert (Noum&eacute;a) | 2020/02 – 2020/06 –</li></h4>
-                    <h4>Alternant ouvrier jardinier paysagiste</li></h4> 
+                <p><li>Atout Vert (Noum&eacute;a) | 2020/02 – 2020/06 –</li></p>
+                    <p>Alternant ouvrier jardinier paysagiste</li></p> 
                     
-                <h4><li>ISEE NC (Noum&eacute;a) | 2019/09 | 2020/02 – 2020/06 –</li></h4>
-                    <h4>Agent recenseur</li></h4>
+                <p><li>ISEE NC (Noum&eacute;a) | 2019/09 | 2020/02 – 2020/06 –</li></p>
+                    <p>Agent recenseur</li></p>
                 
-                <h4><li>Office Plus (Noum&eacute;a) | 2017/11 –</li></h4>
-                    <h4>Conseiller technique</li></h4> 
+                <p><li>Office Plus (Noum&eacute;a) | 2017/11 –</li></p>
+                    <p>Conseiller technique</li></p> 
                     
-                <h4><li>DSI de la Province Nord (Koné) | 2014/11 – 2015/07 –</li></h4>
-                    <h4>Analyste développeur – Chargé du projet de refonte d’un site  de gestion des Installations Classées pour la Protection de l’Environnement (ICPE) et des carrières.</li></h4> 
+                <p><li>DSI de la Province Nord (Koné) | 2014/11 – 2015/07 –</li></p>
+                    <p>Analyste développeur – Chargé du projet de refonte d’un site  de gestion des Installations Classées pour la Protection de l’Environnement (ICPE) et des carrières.</li></p> 
         </section>
         <section id="interet" >
-            <h2 class="txtgreen borderbot">Int&eacute;r&ecirc;t</h2>
-            <p class="inline">E-learning de langages de programmation via YouTube 
-                ou des MOOC (NodeJS et Angular en ce moment), 
-                jardinage, musique(guitare), cinéma, internet</p>
+            <h4 class="txtgreen borderbot"><i class="material-icons plus4pxt">local_activity</i>Int&eacute;r&ecirc;t</h4>
+            <section>
+                <div class="collection">
+       
+                    <a href="#!" class="collection-item">E-learning de langages de programmation via YouTube</a>
+                    <a href="#!" class="collection-item">E-learning de langages de programmation via des MOOC (NodeJS et Angular en ce moment)</a>
+                    <a href="#!" class="collection-item">Jardinage</a>
+                    <a href="#!" class="collection-item">Musique (guitare)</a>
+                    <a href="#!" class="collection-item">Cin&eacute;ma</a>
+                    <a href="#!" class="collection-item">Internet</a>
+                  </div>
+            </section>
         </section>
+       
     </section>
-
+</section>
 </section>
 <footer id="footer">
     
 </footer>
+
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
 <script type="text/javascript" src="./script.js">
 
 </script>
