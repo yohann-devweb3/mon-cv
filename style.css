@@ -100,6 +100,15 @@ h4{
 .borderbot{
     border-bottom : 1px solid brown;
 }
+
+.tap-target-content .white-text{
+    width: 456px;
+    height: 400px;
+    inset: 0px;
+    padding: 56px;
+    vertical-align: bottom;
+}
+
 /*------------------------------------------FOOTER--------------------------------------*/
 #footer{
     background-color: black;
@@ -256,7 +265,36 @@ h4{
         width: 100%;
         HEIGHT: 170PX;
     }
-  
+    .tap-target-wave::before, .tap-target-wave::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+
+    .tap-target-content .white-text{
+        width: 456px;
+        inset: 0px;
+        padding: 56px;
+        position: relative;
+        vertical-align: bottom;
+        TOP: 21PX;
+        font-size: large;
+    }
+    .tap-target-wrapper{
+        right: -331px;
+        bottom: -327px;
+        position: fixed;
+    }
+    .tap-target-wave{
+        top: 344px;
+        left: 344px;
+        width: 112px;
+        height: 112px;
+    }
     /*------------------------------------------FOOTER--------------------------------------*/
     #footer{
         background-color: black;
@@ -303,4 +341,12 @@ h4{
      
         top: 50px!important; 
     }
+
+    .w96{
+        width: 96%!important;
+    }
+    .txtcenter{
+        text-align: center!important;
+    }
+
 }
