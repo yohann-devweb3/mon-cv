@@ -1,163 +1,231 @@
-@media only screen and (max-width: 949px) {/*----------VERSION TABLETTE-------------------------------------------------------------*/
- /*------------------------------------------HEADER--------------------------------------*/
- #header{
-    background-color: #34c4bcec;
-    height: 175px
-}
+@media only screen and (max-width: 949px) {
 
-#NameJob{
-    min-width: 35.9%;
-    padding: 6px;
-    max-width: 52%;
-    position: ABSOLUTE;
-    left: 42%;
-    TOP: 9.2%;
-    background-color: #1e847fdc;
-    border-radius: 4px;
-    FONT-SIZE: 45PX;
-    box-shadow: 21px -16px teal;
-    color: white;
-}
+    /*----------VERSION TABLETTE-------------------------------------------------------------*/
+    /*------------------------------------------HEADER--------------------------------------*/
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
 
-#NameJob h4{
-    font-size: 1.8rem;
-}
+        100% {
+            transform: translateX(25%);
+        }
+    }
 
-#header img{
-    height: 150px;
-    left: 5.4%;
-    POSITION: relative;
-}
-/*------------------------------------------BODY--------------------------------------*/
-body{
-    background-color: #e0e0e0;
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-20deg, red 50%, #000 50%);
+        bottom: 0;
+        left: -100%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
 
-}
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
 
-h4{
-    font-size: 1.2rem!important;
-}
-#leftPanel{
-    border: 1px solid black;
-    max-width: 45%;
-    min-height: 1550px;
-    height: 1035px;
-    padding-right: 5px;
-    padding-left: 5px;
-    background-color: black;
-    box-shadow: 21px -16px rgb(0 0 0 / 43%);
-} 
-#rightPanel{
+    .bg3 {
+        animation-duration: 5s;
+    }
 
-    width: 55%;
-    height: 1550px;
-    padding-right: 9px;
-    padding-left: 9px;
-    background-color: lightyellow;
-    box-shadow: 21px -16px rgb(255 255 224 / 60%);
+    #header {
+        background-color: #34c4bcec;
+        height: 175px
+    }
 
-}
+    #NameJob {
+        min-width: 35.9%;
+        padding: 6px;
+        max-width: 52%;
+        position: ABSOLUTE;
+        left: 42%;
+        TOP: 9.2%;
+        background-color: #1e847fdc;
+        border-radius: 4px;
+        FONT-SIZE: 45PX;
+        box-shadow: 21px -16px teal;
+        color: white;
+    }
 
-#rightPanel img{
-    max-width: 20px;
-    max-height: 20px;
-    position: relative;
-    top: 3px;
-}
+    #NameJob h4 {
+        font-size: 1.8rem;
+    }
 
-#Contact{
-    max-width: 400px;
-}
+    #header img {
+        height: 150px;
+        left: 5.4%;
+        POSITION: relative;
+    }
 
-#Competence{
-    max-width: 400px;
-}
+    /*------------------------------------------BODY--------------------------------------*/
+    body {
+        background-color: #e0e0e0;
 
-#content{
-    min-height: 1590px;
-    background-color: #e0e0e0;
-    margin-right: 0px;
-    margin-left: 0px;
-    font-size: smaller;
+    }
 
-}
+    h4 {
+        font-size: 1.2rem !important;
+    }
 
+    #leftPanel {
+        border: 1px solid black;
+        max-width: 45%;
+        min-height: 1550px;
+        height: 1035px;
+        padding-right: 5px;
+        padding-left: 5px;
+        background-color: black;
+        box-shadow: 21px -16px rgb(0 0 0 / 43%);
+    }
 
+    #rightPanel {
 
-#linkPortfolio{
-    position: relative;
-    TOP: 235px;
-    RIGHT: 18px;
-}
+        width: 55%;
+        height: 1550px;
+        padding-right: 9px;
+        padding-left: 9px;
+        background-color: lightyellow;
+        box-shadow: 21px -16px rgb(255 255 224 / 60%);
 
-#imgPortfolio{
-    width: 16px;
-    LEFT: 1%;
-    position: relative;
-    top: 5PX;
-}
+    }
 
-.borderbot{
-    border-bottom : 1px solid brown;
-}
+    #rightPanel img {
+        max-width: 20px;
+        max-height: 20px;
+        position: relative;
+        top: 3px;
+    }
 
-.tap-target-content .white-text{
-    width: 456px;
-    height: 400px;
-    inset: 0px;
-    padding: 56px;
-    vertical-align: bottom;
-}
+    #Contact {
+        max-width: 400px;
+    }
 
-/*------------------------------------------FOOTER--------------------------------------*/
-#footer{
-    background-color: black;
-    height: 50px;
-    bottom: 0px;
-    position: relative;
-}
-  /*------------------------------------------ADDONS--------------------------------------*/
-    
-    .image{
+    #Competence {
+        max-width: 400px;
+    }
+
+    #content {
+        min-height: 1590px;
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: smaller;
+
+    }
+
+    #linkPortfolio {
+        position: relative;
+        TOP: 235px;
+        RIGHT: 18px;
+    }
+
+    #imgPortfolio {
+        width: 16px;
+        LEFT: 1%;
+        position: relative;
+        top: 5PX;
+    }
+
+    .borderbot {
+        border-bottom: 1px solid brown;
+    }
+
+    .tap-target-content .white-text {
+        width: 456px;
+        height: 400px;
+        inset: 0px;
+        padding: 56px;
+        vertical-align: bottom;
+    }
+
+    /*------------------------------------------FOOTER--------------------------------------*/
+    #footer {
+        background-color: black;
+        height: 50px;
+        bottom: 0px;
+        position: relative;
+    }
+
+    /*------------------------------------------ADDONS--------------------------------------*/
+
+    .image {
         width: 30px;
         height: 30px;
     }
 
-    .inline{
+    .inline {
         display: inline-block;
     }
 
-    .left{
-        float: left!important;
+    .left {
+        float: left !important;
     }
 
 
-    .ovhd{
-        overflow: hidden!important;
+    .ovhd {
+        overflow: hidden !important;
     }
-    .txtgreen{
-        color : #76923C;
+
+    .txtgreen {
+        color: #76923C;
     }
 
     .txtwhite {
         color: white;
     }
-    .plus4pxt{
+
+    .plus4pxt {
         position: relative;
-        top: 4px!important;
+        top: 4px !important;
     }
 }
 
-@media only screen and (min-width: 950px) {/*----------VERSION PC-------------------------------------------------------------*/
+@media only screen and (min-width: 950px) {
+    /*----------VERSION PC-------------------------------------------------------------*/
 
     /*------------------------------------------HEADER--------------------------------------*/
-    #header{
-        
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(25%);
+        }
+    }
+
+    .bg {
+        animation: slide 3s ease-in-out infinite alternate;
+        background-image: linear-gradient(-20deg, red 50%, #000 50%);
+        bottom: 0;
+        left: -100%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+    }
+
+    .bg3 {
+        animation-duration: 5s;
+    }
+
+    #header {
+
         background-color: #34c4bcec;
         height: 175px
     }
 
-    #NameJob{
+    #NameJob {
         min-width: 33.9%;
         padding: 7px;
         max-width: 35%;
@@ -170,21 +238,22 @@ h4{
         color: white;
     }
 
-    #header img{
+    #header img {
         height: 150px;
         left: 20.4%;
         POSITION: relative;
     }
+
     /*------------------------------------------BODY--------------------------------------*/
-    body{
+    body {
         background-color: #e0e0e0;
     }
 
-    H4{
-        font-size: 1.5rem!important;
+    H4 {
+        font-size: 1.5rem !important;
     }
 
-    #leftPanel{
+    #leftPanel {
         border: 1px solid black;
         max-width: 400px;
         min-height: 1343px;
@@ -194,9 +263,10 @@ h4{
         background-color: black;
         border-radius: 5px;
         box-shadow: 21px -16px rgba(0, 0, 0, 0.433);
-    } 
-    #rightPanel{
-        
+    }
+
+    #rightPanel {
+
         width: 55%;
         height: 1343px;
         padding-right: 9px;
@@ -204,37 +274,36 @@ h4{
         background-color: lightyellow;
         box-shadow: 21px -16px rgba(255, 255, 224, 0.6);
     }
-    
-    #rightPanel img{
+
+    #rightPanel img {
         max-width: 20px;
         max-height: 20px;
         position: relative;
         top: 3px;
     }
 
-    #Contact{
+    #Contact {
         max-width: 400px;
     }
 
-    #Competence{
+    #Competence {
         max-width: 400px;
     }
 
-    #content{
+    #content {
         min-height: 1350px;
-        background-color: #e0e0e0;
         margin-right: 10px;
         margin-left: 80px;
     }
 
 
-    #linkPortfolio{
+    #linkPortfolio {
         position: relative;
         TOP: 55px;
         RIGHT: 18px;
     }
 
-    #imgPortfolio{
+    #imgPortfolio {
         width: 30px;
         LEFT: 1%;
         position: relative;
@@ -243,18 +312,18 @@ h4{
 
     progress {
         -webkit-appearance: none;
-      }
-      
-      ::-webkit-progress-value {
-        background-color: orange;
-      }
-      
-
-    .borderbot{
-        border-bottom : 1px solid brown;
     }
 
-    #imgMinPortfolio{
+    ::-webkit-progress-value {
+        background-color: orange;
+    }
+
+
+    .borderbot {
+        border-bottom: 1px solid brown;
+    }
+
+    #imgMinPortfolio {
         display: block;
         border-radius: 2px 2px 0 0;
         position: relative;
@@ -265,7 +334,9 @@ h4{
         width: 100%;
         HEIGHT: 170PX;
     }
-    .tap-target-wave::before, .tap-target-wave::after {
+
+    .tap-target-wave::before,
+    .tap-target-wave::after {
         content: '';
         display: block;
         position: absolute;
@@ -275,7 +346,7 @@ h4{
         background-color: #ffffff;
     }
 
-    .tap-target-content .white-text{
+    .tap-target-content .white-text {
         width: 456px;
         inset: 0px;
         padding: 56px;
@@ -284,19 +355,22 @@ h4{
         TOP: 21PX;
         font-size: large;
     }
-    .tap-target-wrapper{
+
+    .tap-target-wrapper {
         right: -331px;
         bottom: -327px;
         position: fixed;
     }
-    .tap-target-wave{
+
+    .tap-target-wave {
         top: 344px;
         left: 344px;
         width: 112px;
         height: 112px;
     }
+
     /*------------------------------------------FOOTER--------------------------------------*/
-    #footer{
+    #footer {
         background-color: black;
         height: 50px;
         bottom: 0px;
@@ -304,49 +378,52 @@ h4{
     }
 
     /*------------------------------------------ADDONS--------------------------------------*/
-    .w30{
-        width: 30%!important;
+    .w30 {
+        width: 30% !important;
     }
-    .image{
+
+    .image {
         width: 30px;
         height: 30px;
     }
 
-    .inline{
+    .inline {
         display: inline-block;
     }
 
-    .left{
-        float: left!important;
+    .left {
+        float: left !important;
     }
 
 
-    .ovhd{
-        overflow: hidden!important;
+    .ovhd {
+        overflow: hidden !important;
     }
-    .txtgreen{
-        color : #76923C;
+
+    .txtgreen {
+        color: #76923C;
     }
 
     .txtwhite {
         color: white;
     }
-    
-    .plus4pxt{
+
+    .plus4pxt {
         position: relative;
-        top: 4px!important;
+        top: 4px !important;
     }
 
-    .plus50pxt{
-     
-        top: 50px!important; 
+    .plus50pxt {
+
+        top: 50px !important;
     }
 
-    .w96{
-        width: 96%!important;
+    .w96 {
+        width: 96% !important;
     }
-    .txtcenter{
-        text-align: center!important;
+
+    .txtcenter {
+        text-align: center !important;
     }
 
 }
